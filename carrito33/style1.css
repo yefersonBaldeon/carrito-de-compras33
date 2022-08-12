@@ -1,0 +1,84 @@
+.btn-flotante {
+    font-size: 16px; /* Cambiar el tamaño de la tipografia */
+    font-weight: bold; /* Fuente en negrita o bold */
+    color: #ffffff; /* Color del texto */
+    border-radius: 5px; /* Borde del boton */
+    letter-spacing: 2px; /* Espacio entre letras */
+    background-color: rgb(50, 50, 227); /* Color de fondo */
+    padding: 18px 30px; /* Relleno del boton */
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    text-decoration: none;
+    }
+
+    
+    .btn-flotante:hover {
+    background-color: greenyellow;
+    transform: translateY(-7px);
+    }
+    
+    @media only screen and (max-width: 600px) {
+    .btn-flotante {
+    font-size: 14px;
+    padding: 12px 20px;
+    bottom: 20px;
+    right: 20px;
+    }
+    }
+
+
+
+    #btn-mas{
+        display: none;
+    }
+
+    
+    .container2{
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+    }
+
+
+    
+    .redes a, .btn-mas label{
+        display: block;
+        text-decoration: none;
+        background: #cc2b2b;
+        color: #fff;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+        transition: all 500ms ease;
+    }
+    .redes a:hover{
+        background: #fff;
+        color: #cc2b2b;
+    }
+    .redes a{
+        margin-bottom: -15px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #btn-mas:checked~ .redes a{
+        margin-bottom: 10px;
+        opacity: 1;
+        visibility: visible;
+    }
+    .btn-mas label{
+        cursor: pointer;
+        background: #f44141;
+        font-size: 23px;
+    }
+    #btn-mas:checked ~ .btn-mas label{
+        transform: rotate(135deg);
+        font-size: 25px;
+    }
+    
